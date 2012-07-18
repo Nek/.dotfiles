@@ -1,4 +1,4 @@
-function dotfile;
+function dot;
 	if test (count $argv[1]) -eq 0;
 		echo "You have not provided file or directory.";
 		return 1;
@@ -13,12 +13,14 @@ function dotfile;
 			mkdir -p .dotfiles/$name; 
 			mv $name/* .dotfiles/$name;
 			rm -rf $name
+			set curr (pwd)
+			ln -s $curr/.dotfiles/$name $curr/$name
 			echo Dotfiled \"$name\" directory to \"~/.dotfiles/$name\"
 		else;
 			mv $name .dotfiles;
+			ln -s (pwd).dotfiles/$name $name
 			echo Dotfiled \"$name\" file to \"~/.dotfiles/$name\"
 		end;
-		ln -s .dotfiles/$name $name
 		return 0;
 	else;
 		echo "There is no readable file or directory named "\"$name\".;
