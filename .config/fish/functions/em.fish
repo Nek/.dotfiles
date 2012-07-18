@@ -1,3 +1,3 @@
 function em
-	emacsclient -n $argv; 
+	emacsclient -s $TMPDIR/emacs501/server -n $argv; 
 end
