@@ -9,16 +9,16 @@ function dot;
 			echo "Can't dotfile a symbolic link."
 			return 3;
 		end;
+		set curr (pwd);
 		if test -d $name;
 			mkdir -p .dotfiles/$name; 
 			mv $name/* .dotfiles/$name;
 			rm -rf $name
-			set curr (pwd)
 			ln -s $curr/.dotfiles/$name $curr/$name
 			echo Dotfiled \"$name\" directory to \"~/.dotfiles/$name\"
 		else;
 			mv $name .dotfiles;
-			ln -s (pwd).dotfiles/$name $name
+			ln -s $curr/.dotfiles/$name $name
 			echo Dotfiled \"$name\" file to \"~/.dotfiles/$name\"
 		end;
 		return 0;
