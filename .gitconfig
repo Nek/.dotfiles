@@ -1,0 +1,19 @@
+[user]
+	name = Nek
+	email = nikdudnik@gmail.com
+[core]
+	excludesfile = /Users/nek/.gitignore
+	quotepath = false
+[alias]
+  	s = status
+  	c = commit
+  	up = push -u origin master
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit 
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.localized/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[color]
+	ui = true
