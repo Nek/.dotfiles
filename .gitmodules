@@ -1,12 +1,12 @@
 [submodule ".emacs.d/site-lisp/slime"]
 	path = .emacs.d/site-lisp/slime
-	url = https://github.com/nablaone/slime.git
+	url = git://github.com/nablaone/slime.git
 [submodule ".emacs.d/site-lisp/mark-multiple"]
 	path = .emacs.d/site-lisp/mark-multiple
-	url = https://github.com/magnars/mark-multiple.el.git
+	url = git://github.com/magnars/mark-multiple.el.git
 [submodule ".emacs.d/site-lisp/js2-mode"]
 	path = .emacs.d/site-lisp/js2-mode
 	url = git://github.com/mooz/js2-mode.git
 [submodule ".emacs.d/site-lisp/js2-refactor"]
 	path = .emacs.d/site-lisp/js2-refactor
-	url = https://github.com/magnars/js2-refactor.el
+	url = git://github.com/magnars/js2-refactor.el
