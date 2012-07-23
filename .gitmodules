@@ -10,3 +10,9 @@
 [submodule ".emacs.d/site-lisp/js2-refactor"]
 	path = .emacs.d/site-lisp/js2-refactor
 	url = git://github.com/magnars/js2-refactor.el
+[submodule ".emacs.d/site-lisp/buster-snippets"]
+	path = .emacs.d/site-lisp/buster-snippets
+	url = https://github.com/magnars/buster-snippets.el.git
+[submodule ".emacs.d/site-lisp/auto-complete"]
+	path = .emacs.d/site-lisp/auto-complete
+	url = git://github.com/m2ym/auto-complete.git
