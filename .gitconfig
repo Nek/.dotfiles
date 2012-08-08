@@ -2,7 +2,7 @@
 	name = Nek
 	email = nikdudnik@gmail.com
 [core]
-	excludesfile = /Users/nek/.gitignore
+	excludesfile = ~/.dotfiles/.gitignore_global
 	quotepath = false
 [alias]
   	s = status
