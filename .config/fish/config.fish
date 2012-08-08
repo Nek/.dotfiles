@@ -5,6 +5,7 @@ end
 
 set PATH $HOME/.rbenv/bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
+set NODE_PATH /usr/local/bin/node
 rbenv rehash >/dev/null ^&1
 
 function fish_prompt --description 'Write out the prompt'
